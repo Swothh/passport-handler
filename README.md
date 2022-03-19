@@ -15,7 +15,7 @@ yarn add passport-handler
 # 🔮 Importing
 ```js
 import Handler from 'passport-handler'; // esm
-const Handler = require('passport-handler'); // commonjs
+const Handler = require('passport-handler').default; // commonjs
 ```
 
 # ✨ Setup
