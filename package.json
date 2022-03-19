@@ -1,0 +1,35 @@
+{
+  "name": "passport-handler",
+  "version": "1.0.0",
+  "description": "Error and Success Handler for Passport.js",
+  "author": "Swôth <me@swoth.xyz> (https://swoth.xyz)",
+  "homepage": "https://github.com/swothh/passport-handler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swothh/passport-handler"
+  },
+  "license": "MIT",
+  "keywords": [
+    "passport",
+    "handler",
+    "auth",
+    "authenticate",
+    "error",
+    "success"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
