@@ -25,7 +25,7 @@ import passport from 'passport';
 
 // passport strategy and others...
 
-app.get('/auth/login', Handler(passport.authenticate('provider'), {
+app.get('/auth/callback', Handler(passport.authenticate('provider'), {
     error: (err, req, res, next) => {
         console.log(err.message);
         next();
@@ -35,7 +35,5 @@ app.get('/auth/login', Handler(passport.authenticate('provider'), {
         console.log('successful');
         next();
     }
-}), (req, res) => {
-    res.send('you are logged in!');
-});
+}));
 ```
